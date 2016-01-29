@@ -6,6 +6,6 @@ describe ('pizza', function() {
   });
   it("adds the price method to the pizza constructor", function() {
   var testPizza = new Pizza(1, "large");
-  expect(testPizza.price()).to.equal(10);
+  expect(testPizza.price()).to.equal(11);
   });
 });
