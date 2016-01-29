@@ -7,8 +7,60 @@
     <script src="js/scripts.js"></script>
     <title>Template</title>
   </head>
+
   <body>
-    <div class="Container">
+    <div class="container">
+    <div class="jumbotron">
+     <header>
+      <h1>Acme Pizza</h1>
+    </header>
     </div>
+
+
+<form id="pizza">
+  <h1>Order Your Pizza</h1>
+<h2>Size</h2>
+<div class="size" id="pizzaSize"> <!-- ****i put this in to see if I can call all options*** -->
+
+<label class="size">
+  <input type="radio" name="inlineRadioOptions" id="small" value="option1"> Small
+</label>
+<label class="size">
+  <input type="radio" name="inlineRadioOptions" id="medium" value="option2"> Medium
+</label>
+<label class="size">
+  <input type="radio" name="inlineRadioOptions" id="large" value="option3"> Large
+</label>
+</div> <!-- pizzaSize -->
+
+<h2>Number of Toppings</h2>
+<label class="topping">
+  <input type="radio" name="inlineRadioOptions1" id="topping1" value="option1"> 1
+</label>
+<br>
+<label class="topping">
+  <input type="radio" name="inlineRadioOptions1" id="topping2" value="option2"> 2
+</label>
+ <br>
+<label class="topping">
+  <input type="radio" name="inlineRadioOptions1" id="topping3" value="option3"> 3
+</label>
+</form>
+
+<div class="row" id="submitOrderRow">
+  <div class='col-xs-12 button-wrapper'>
+  <button type="button" class="btn btn-primary btn-lg btn-danger" id=pizzaorder>Take My Order</button>
+  </div>
+</div> <!-- row -->
+
+<div class="row" id="priceRow">
+  <div class="show-pizza">
+     <p>
+     Thanks for ordering, your price is $<span id="pizzaPrice"></span>
+     </p>
+  </div>
+</div> <!-- row -->
+
+    </div> <!--container  -->
   </body>
 </html>

@@ -30,3 +30,21 @@ Pizza.prototype.price = function() {
     return price;
   }
   };
+
+Interface//
+  $(document).ready(function() {
+  var newPizza;
+  $("form#pizza").submit(function(event) {
+      event.preventDefault();
+
+      var pizzaSize= $("radio#size").val();
+      var pizzaTopping= $("radio#topping").val();
+      var newPizza = new Pizza(pizzaSize, pizzaTopping);
+      var price = newPizza.price();
+
+ $(".show-pizza").show();
+ $("#pizzaPrice").text(" $" + price);
+
+
+ });
+});
