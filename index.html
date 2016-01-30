@@ -20,47 +20,37 @@
 <form id="pizza">
   <h1>Order Your Pizza</h1>
 <h2>Size</h2>
-<div class="size" id="pizzaSize"> <!-- ****i put this in to see if I can call all options*** -->
+<p class="lead">Please select the following:</p>
+     <form id="pizza">
+       <div class= "form-group">
+         <label for="size">Size</label>
+         <select id="size">
+           <option value="Large">Large</option>
+           <option value="Medium">Medium</option>
+           <option value="Small">Small</option>
+         </select>
+       </div>
+       <div class= "form-group">
+         <label for="topping">Number of Toppings</label>
+         <select id="topping">
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+         </select>
+       </div>
 
-<label class="size">
-  <input type="radio" name="inlineRadioOptions" id="small" value="option1"> Small
-</label>
-<label class="size">
-  <input type="radio" name="inlineRadioOptions" id="medium" value="option2"> Medium
-</label>
-<label class="size">
-  <input type="radio" name="inlineRadioOptions" id="large" value="option3"> Large
-</label>
-</div> <!-- pizzaSize -->
+       <button type="submit" id="button" class="btn btn-primary">Click here to view pizza price</button>
 
-<h2>Number of Toppings</h2>
-<label class="topping">
-  <input type="radio" name="inlineRadioOptions1" id="topping1" value="option1"> 1
-</label>
-<br>
-<label class="topping">
-  <input type="radio" name="inlineRadioOptions1" id="topping2" value="option2"> 2
-</label>
- <br>
-<label class="topping">
-  <input type="radio" name="inlineRadioOptions1" id="topping3" value="option3"> 3
-</label>
-</form>
+          </form>
 
-<div class="row" id="submitOrderRow">
-  <div class='col-xs-12 button-wrapper'>
-  <button type="button" class="btn btn-primary btn-lg btn-danger" id=pizzaorder>Take My Order</button>
-  </div>
-</div> <!-- row -->
 
-<div class="row" id="priceRow">
-  <div class="show-pizza">
-     <p>
-     Thanks for ordering, your price is $<span id="pizzaPrice"></span>
-     </p>
-  </div>
-</div> <!-- row -->
+        <div class="show-price">
+          <h2>Thanks for ordering here is your pizza:</h2>
+          <p>Size of Pizza:<span id="showPizzaSize"></span></p>
+          <p>Number of Toppings:<span id="pizzaTopping"></span></p>
+          <p>Pizza Price:<span id="pizzaPrice"></span></p>
 
-    </div> <!--container  -->
-  </body>
-</html>
+        </div>
+       </div>
+      </body>
+    </html>
