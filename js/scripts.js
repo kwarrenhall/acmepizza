@@ -9,27 +9,27 @@ Pizza.prototype.price = function() {
     var sizes = this.size
     var topping = this.topping
 
-    if ((sizes === "large") && (topping === 1)) {
+    if ((this.size === "large") && (this.topping === 1)) {
       return price += 1;
-  } else if ((sizes === "large") && (topping === 2)) {
+  } else if ((this.size === "large") && (this.topping === 2)) {
     return price += 2;
-  } else if ((sizes === "large") && (topping === 2)) {
+  } else if ((this.size === "large") && (this.topping === 2)) {
     return price += 3;
-  } else if ((sizes === "medium") && (topping === 1)) {
+  } else if ((this.size === "medium") && (this.topping === 1)) {
     return price;
-  } else if ((sizes === "medium") && (topping === 2)) {
+  } else if ((this.size === "medium") && (this.topping === 2)) {
     return price += 1;
-  } else if ((sizes === "medium") && (topping === 3)) {
+  } else if ((this.size === "medium") && (this.topping === 3)) {
     return price += 2;
-  } else if ((sizes === "small") && (topping === 1)) {
+  } else if ((this.size === "small") && (this.topping === 1)) {
     return price -= 1;
-  } else if ((sizes === "small") && (topping === 2)) {
+  } else if ((this.size === "small") && (this.topping === 2)) {
     return price;
-  } else if ((sizes === "small") && (topping === 3)) {
+  } else if ((this.size === "small") && (this.topping === 3)) {
     return price += 1;
   }
     return price;
-  };
+  }
 
 // Interface//
 $(document).ready(function() {
