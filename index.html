@@ -31,13 +31,20 @@
          </select>
        </div>
        <div class= "form-group">
-         <label for="topping">Number of Toppings</label>
-         <select id="topping">
+         <label for="topping1">Topping 1</label>
+         <select id="topping1">
            <option value="Pepperoni">Pepperoni</option>
-           <option value="Jalapeno">Jalapeno</option>
-           <option value="Garlic">Garlic</option>
+           <option value="Sausage">Sausage</option>
          </select>
        </div>
+     <div class= "form-group">
+       <label for="topping2">Topping 2</label>
+       <select id="topping2">
+         <option value="Mushroom">Mushroom</option>
+         <option value="Jalapeno">Jalapeno</option>
+         <option value="Garlic">Garlic</option>
+       </select>
+     </div>
 
        <button type="submit" id="button" class="btn btn-primary">Click here to view pizza price</button>
 
@@ -45,12 +52,13 @@
 
 
         <div class="show-price">
-          <h2>Thanks for ordering here is your pizza:</h2>
+          <h2>Thank you, here is your order:</h2>
           <p>Size of Pizza:<span id="showPizzaSize"></span></p>
-          <p>Number of Toppings:<span id="pizzaTopping"></span></p>
+          <p>Toppings:<span id="pizzaTopping1"></span> <span id="pizzaTopping2"></span></p
           <p>Pizza Price:<span id="pizzaPrice"></span></p>
 
         </div>
+         </div>
        </div>
       </body>
     </html>
