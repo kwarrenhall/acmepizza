@@ -11,7 +11,7 @@ Pizza.prototype.price = function() {
       return price += 3;
   } else if ((this.size === "Large") && (this.topping1 === "Pepperoni" && this.topping2 === "Jalapeno")) {
     return price += 3;
-  } else if ((this.size === "Large") && (this.topping1 === "Pepperoni" && this.topping === "Garlic")) {
+  } else if ((this.size === "Large") && (this.topping1 === "Pepperoni" && this.topping2 === "Garlic")) {
     return price += 3;
   } else if ((this.size === "Large") && (this.topping1 === "Sausage" && this.topping2 === "Mushroom")) {
     return price += 3;
@@ -19,21 +19,21 @@ Pizza.prototype.price = function() {
     return price += 3;
   } else if ((this.size === "Large") && (this.topping1 === "Sausage" && this.topping2 === "Garlic")) {
     return price += 3;
-  } else if ((this.size === "Large") && (this.topping1 === "Peperoni")) {
+  } else if ((this.size === "Large") && (this.topping1 === "Peperoni"  && this.topping2 === "None")) {
     return price += 2;
-  } else if ((this.size === "Large") && (this.topping1 === "Sausage")) {
+  } else if ((this.size === "Large") && (this.topping1 === "Sausage" && this.topping2 === "None")) {
     return price += 2;
-  } else if ((this.size === "Large") && (this.topping2 === "Mushroom")) {
+  } else if ((this.size === "Large") && (this.topping2 === "Mushroom" && this.topping1 === "None")) {
     return price += 2;
-  } else if ((this.size === "Large") && (this.topping2 === "Jalapeno")) {
+  } else if ((this.size === "Large") && (this.topping2 === "Jalapeno" && this.topping1 === "None")) {
     return price += 2;
-  } else if ((this.size === "Large") && (this.topping2 === "Garlic")) {
+  } else if ((this.size === "Large") && (this.topping2 === "Garlic" && this.topping1 === "None")) {
     return price += 2;
   } else if ((this.size === "Medium") && (this.topping1 === "Pepperoni" && this.topping2 === "Mushroom")) {
     return price += 1;
   } else if ((this.size === "Medium") && (this.topping1 === "Pepperoni" && this.topping2 === "Jalapeno")) {
     return price += 1;
-  } else if ((this.size === "Medium") && (this.topping1 === "Pepperoni" && this.topping === "Garlic")) {
+  } else if ((this.size === "Medium") && (this.topping1 === "Pepperoni" && this.topping2 === "Garlic")) {
     return price += 1;
   } else if ((this.size === "Medium") && (this.topping1 === "Sausage" && this.topping2 === "Mushroom")) {
     return price += 1;
@@ -41,15 +41,15 @@ Pizza.prototype.price = function() {
     return price += 1;
   } else if ((this.size === "Medium") && (this.topping1 === "Sausage" && this.topping2 === "Garlic")) {
     return price += 1;
-  } else if ((this.size === "Medium") && (this.topping1 === "Peperoni")) {
+  } else if ((this.size === "Medium") && (this.topping1 === "Peperoni" && this.topping2 === "None")) {
     return price;
-  } else if ((this.size === "Medium") && (this.topping1 === "Sausage")) {
+  } else if ((this.size === "Medium") && (this.topping1 === "Sausage" && this.topping2 === "None")) {
     return price;
-  } else if ((this.size === "Medium") && (this.topping2 === "Mushroom")) {
+  } else if ((this.size === "Medium") && (this.topping2 === "Mushroom" && this.topping1 === "None")) {
     return price;
-  } else if ((this.size === "Medium") && (this.topping2 === "Jalapeno")) {
+  } else if ((this.size === "Medium") && (this.topping2 === "Jalapeno" && this.topping1 === "None")) {
     return price;
-  } else if ((this.size === "Medium") && (this.topping2 === "Garlic")) {
+  } else if ((this.size === "Medium") && (this.topping2 === "Garlic" && this.topping1 === "None")) {
     return price;
   } else if ((this.size === "Small") && (this.topping1 === "Pepperoni" && this.topping2 === "Mushroom")) {
       return price -= 1;
@@ -61,17 +61,17 @@ Pizza.prototype.price = function() {
     return price -= 1;
   } else if ((this.size === "Small") && (this.topping1 === "Sausage" && this.topping2 === "Jalapeno")) {
     return price -= 1;
-  } else if ((this.size === "Small") && (this.topping1 === "Sausage" && this.topping === "Garlic")) {
+  } else if ((this.size === "Small") && (this.topping1 === "Sausage" && this.topping2 === "Garlic")) {
     return price -= 1;
-  } else if ((this.size === "Small") && (this.topping1 === "Peperoni")) {
+  } else if ((this.size === "Small") && (this.topping1 === "Peperoni" && this.topping2 === "None")) {
     return price -= 2;
-  } else if ((this.size === "Small") && (this.topping1 === "Sausage")) {
+  } else if ((this.size === "Small") && (this.topping1 === "Sausage" && this.topping2 === "None")) {
     return price -= 2;
-  } else if ((this.size === "Small") && (this.topping2 === "Mushroom")) {
+  } else if ((this.size === "Small") && (this.topping2 === "Mushroom" && this.topping1 === "None")) {
     return price -= 2;
-  } else if ((this.size === "Small") && (this.topping2 === "Jalapeno")) {
+  } else if ((this.size === "Small") && (this.topping2 === "Jalapeno" && this.topping1 === "None")) {
     return price -= 2;
-  } else if ((this.size === "Small") && (this.topping2 === "Garlic")) {
+  } else if ((this.size === "Small") && (this.topping2 === "Garlic" && this.topping1 === "None")) {
     return price -= 2;
   }
     return price;
@@ -93,8 +93,7 @@ $(document).ready(function() {
     //   return alert("Please make all selections");
     //   $(".show-price").hide();
     // }
-    
-
+$(".show-price").hide();
   $(".show-price").show();
   $("#showPizzaSize").text(" " + pizzaSize);
   $("#pizzaTopping1").text("" + pizzaTopping1);
